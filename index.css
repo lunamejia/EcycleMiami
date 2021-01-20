@@ -1,0 +1,69 @@
+h1 { 
+    font-size: 40 px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size:30 px;
+    color: black;
+    font-family:'Work Sans', sans-serif;
+}
+
+body{
+    width:100%;
+    background-color: white;
+
+}
+
+h2 {
+    font-family:'Open Sans', sans-serif;
+}
+
+.banner img {
+    opacity: 50% ;
+}
+
+.text1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button1 {
+display: block;
+background-color:white;
+ outline: black;
+ outline: .5em;
+ margin: auto;
+ text-align: center;
+ width: 8cm;
+ height: 1.5cm;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.faqs {
+    font-size: 40px;
+    font-family: "Times","Times New Roman",serif;
+    font-weight:bold;
+    text-align: center;
+}
+
+.faqsq1 {
+    font-size: 22px;
+    font-family: "Times","Times New Roman",serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.faqsa1 {
+    font-size: 18px;
+    font-family: "Times","Times New Roman",serif;
+   margin-left: 1cm;
+   margin-right: 1cm;
+} 
