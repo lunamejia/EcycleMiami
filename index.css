@@ -1,19 +1,24 @@
-h1 { 
-    font-size: 40 px;
+html {
+  font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
+  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40);
+}
+
+body{
+  width:100%;
+  background-color: white;
+
+}
+
+h1 {
+    font-size: 2.5rem;
     color: black;
     font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
-    font-size:30 px;
+    font-size:1.875rem;
     color: black;
     font-family:'Work Sans', sans-serif;
-}
-
-body{
-    width:100%;
-    background-color: white;
-
 }
 
 h2 {
@@ -39,21 +44,31 @@ background-color:white;
  height: 1.5cm;
 }
 
-h4 {
-    font-size: 20px;
+.button1 {
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
 .faqs {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "Times","Times New Roman",serif;
     font-weight:bold;
     text-align: center;
 }
 
+.faqs-container{
+  display: flex;
+  flex-flow: wrap-reverse;
+}
+
+.qa {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
 .faqsq1 {
-    font-size: 22px;
+    font-size: 2rem;
     font-family: "Times","Times New Roman",serif;
     font-weight: bold;
     text-align: center;
@@ -62,8 +77,9 @@ h4 {
 }
 
 .faqsa1 {
-    font-size: 18px;
+    font-size: 1.5rem;
     font-family: "Times","Times New Roman",serif;
-   margin-left: 1cm;
-   margin-right: 1cm;
-} 
+    text-align: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
