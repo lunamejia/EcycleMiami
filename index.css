@@ -1,6 +1,15 @@
 html {
-  font-size: calc(0.875em + 0.25 * (100vw - 80em) / 40);
-  font-size: -webkit-calc(87.5% + 0.25 * (100vw - 8000%) / 40);
+  font-size: 100%;
+
+  /* Scales by 1px for every 100px from 600px onwards */
+  @media (min-width: 600px) {
+    font-size: calc(112.5% + 4 * (100vw - 600px) / 400);
+  }
+
+  /* Sets font-size to 22px after a viewport of 1000px */
+  @media (min-width: 1000px) {
+    font-size: 22px;
+  }
 }
 
 *{
@@ -9,13 +18,13 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: black;
   font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
-  font-size:1.875rem;
+  font-size:1.4rem;
   color: black;
   font-family:'Work Sans', sans-serif;
 }
@@ -25,7 +34,7 @@ h2 {
 }
 
 div.title {
-  padding: 3rem;
+  padding: 2rem;
   text-align: left;
   vertical-align: text-top;
 }
@@ -48,8 +57,15 @@ div.title {
   text-transform: capitalize;
   top: 15%;
   width:100%;
+  margin: 0;
+  padding: 0;
   text-align:center;
-  font-size: 7rem;}
+  font-size: 7rem;
+}
+
+@media (max-width: 975px) {
+  .heading{font-size: 11.5vw}
+}
 
 .text1{
   color:black;
@@ -58,10 +74,17 @@ div.title {
   position:absolute;
   top: 45%;
   width:100%;
+  margin: 0;
+  padding: 0;
   text-align:center;
   font-size: 1.8rem;
 }
 
+@media (max-width: 900px){
+  .text1{
+    font-size: 3.3vw;
+  }
+}
 .button1 {
   display: block;
   color: black;
@@ -97,16 +120,19 @@ div.title {
 
 .faqsq1 {
   font-size: 2rem;
+  line-height: 1.2em;
   font-family: "Times","Times New Roman",serif;
   font-weight: bold;
   text-align: center;
   margin-left: 1cm;
   margin-right: 1cm;
+  margin-bottom: 0.5cm
 }
 
 .faqsa1 {
   font-size: 1.5rem;
   font-family: "Times","Times New Roman",serif;
+  line-height: 1.3em;
   text-align: center;
   margin-left: 1cm;
   margin-right: 1cm;
