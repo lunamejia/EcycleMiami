@@ -110,13 +110,18 @@ div.title {
 
 .faqs-container{
   display: flex;
-  flex-flow: wrap-reverse;
+  flex-flow: wrap;
 }
 
 .qa {
   flex: 1 0 47vw;
   margin: 10px;
 }
+
+#faq1 {order: 1}
+#faq2 {order: 2}
+#faq3 {order: 3}
+#faq4 {order: 4}
 
 .faqsq1 {
   font-size: 2rem;
