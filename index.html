@@ -19,7 +19,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -42,30 +41,36 @@
   <button class="button1" type="button" name="button1">GET STARTED TODAY</button>
   <h1 class="faqs">FAQS</h1>
   <div class="faqs-container">
-    <div class="qa" id="faq1">
+    <div class="qa" id="faq-1">
       <div class="faqsq1">Why choose Ecycle Miami?</div>
       <div class="faqsa1">Ecycle Miami is the easiest platofrm to access areas that recyle or refurbish electronics. The platform is specifically designed to help anyone living in Miami find the perfect place for recycling their electronics.</div>
     </div>
 
-    <div class="qa" id="faq2">
+    <div class="qa" id="faq-2">
       <div class="faqsq1">What types of electronics can be recycled or refurbished?</div>
       <div class="faqsa1">While most electronics can be donated to a certain company or charity, there are still some restrictions. Our surveys and detailed descriptions on acceptable electronics will guide the user on where to donate their specific
         electronic.</div>
     </div>
 
-    <div class="qa" id="faq2">
+    <div class="qa" id="faq-4">
       <div class="faqsq1">What is the purpose of Ecycle Miami?</div>
       <div class="faqsa1">Ecycle Miami is a web platform designed to help the ciiizens of Miami find the perfect place to donate their electronics. Many users have trouble with donating certain electronics to a source that recycles or refurbishes
         electronics. Certain places only accept certian kinds of electronics which can be inconvieniet for many people. Ecycle Miami helps these users donate their old electronic in an easy, user friendly way.</div>
     </div>
 
-    <div class="qa" id="faq3">
+    <div class="qa" id="faq-3">
       <div class="faqsq1">What are some of examples of companies or charities that Ecycle Miami supports with their process?</div>
       <div class="faqsa1">Ecycle Miami</div>
     </div>
   </div>
-  <br>
-  <br>
+
+  <script type="text/javascript">
+    var faqs = document.querySelectorAll('[id^="faq-"]');
+
+    for(var i=0; i < faqs.length; i++){
+      faqs[i].style.order = faqs[i].id.substring(4);
+    }
+  </script>
 
 </body>
 
