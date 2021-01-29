@@ -143,3 +143,12 @@ div.title {
   margin-left: 1cm;
   margin-right: 1cm;
 }
+
+.contactf {
+  font-size: 2rem;
+  font-family: "Times","Times New Roman",serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
