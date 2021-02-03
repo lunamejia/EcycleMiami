@@ -166,3 +166,10 @@ div.title {
   margin-left: 1cm;
   margin-right: 1cm;
 }
+
+
+hr {
+  color:black;
+  height: 2px; 
+  
+}
