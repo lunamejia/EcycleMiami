@@ -114,15 +114,10 @@ div.title {
   flex-flow: wrap;
 }
 
-.qa {
+.faqs-container > .qa {
   flex: 1 0 47vw;
   margin: 10px;
 }
-
-#faq1 {order: 1}
-#faq2 {order: 2}
-#faq3 {order: 3}
-#faq4 {order: 4}
 
 .faqsq1 {
   font-size: 2rem;
@@ -144,7 +139,26 @@ div.title {
   margin-right: 1cm;
 }
 
-.contactf {
+.contacth {
+  font-size: 2rem;
+  font-family: "Times","Times New Roman",serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
+
+
+.contacta1 {
+  font-size: 2rem;
+  font-family: "Times","Times New Roman",serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
+
+.contacta2 {
   font-size: 2rem;
   font-family: "Times","Times New Roman",serif;
   font-weight: bold;
