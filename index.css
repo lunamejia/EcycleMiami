@@ -173,3 +173,55 @@ hr {
   height: 2px; 
   
 }
+
+.banner2 {
+  width: 100%;
+  opacity: 90%;
+}
+
+.button2 {
+  display: block;
+  color: black;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color:white;
+  outline: black;
+  outline: .5em;
+  top: 30%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+.banner2 {
+  position:relative;
+  width:90%;
+  margin:0 auto;
+  margin-bottom: 4rem;
+}
+
+.banner2heading{
+  color:black;
+  position:absolute;
+  text-transform: capitalize;
+  top: 15%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  font-size: 7rem;
+}
+.banner2text{
+  color:black;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  position:absolute;
+  top: 45%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  font-size: 1.8rem;
+}
