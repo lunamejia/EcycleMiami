@@ -174,11 +174,6 @@ hr {
   
 }
 
-.banner2 {
-  width: 100%;
-  opacity: 90%;
-}
-
 .button2 {
   display: block;
   color: black;
@@ -200,6 +195,7 @@ hr {
   width:90%;
   margin:0 auto;
   margin-bottom: 4rem;
+  opacity: 90%;
 }
 
 .banner2heading{
