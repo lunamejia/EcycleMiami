@@ -12,9 +12,9 @@ html {
   }
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #home h1 {
@@ -24,16 +24,16 @@ html {
 }
 
 #home h3 {
-  font-size:1em;
+  font-size: 1em;
   color: black;
-  font-family:'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h2 {
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-nav{
+nav {
   overflow: hidden;
   position: relative;
   font-size: 1.4em;
@@ -46,13 +46,13 @@ nav a {
   margin: 15px;
 }
 
-nav div.container{
+nav div.container {
   position: absolute;
   top: 40%;
   right: 10px;
 }
 
-nav a.icon{
+nav a.icon {
   display: none;
 }
 
@@ -63,7 +63,10 @@ nav div#title {
 }
 
 @media (max-width: 700px) {
-  nav div.container {display: none;}
+  nav div.container {
+    display: none;
+  }
+
   nav a.icon {
     float: right;
     display: block;
@@ -73,7 +76,7 @@ nav div#title {
     right: 10px;
   }
 
-  nav.responsive a.non-home{
+  nav.responsive a.non-home {
     text-align: left;
     display: block;
   }
@@ -86,60 +89,62 @@ nav div#title {
   }
 }
 
-.banner{
-  position:relative;
-  width:90%;
-  margin:0 auto;
+.banner {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 4rem;
 }
 
-.banner img{
-  width:100%;
-  opacity: 50% ;
+.banner img {
+  width: 100%;
+  opacity: 50%;
 }
 
-.heading{
-  color:black;
-  position:absolute;
+.heading {
+  color: black;
+  position: absolute;
   text-transform: capitalize;
   top: 15%;
-  width:100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  text-align:center;
+  text-align: center;
   font-size: 7rem;
 }
 
 @media (max-width: 975px) {
-  .heading{
-    font-size: 11.5vw}
+  .heading {
+    font-size: 11.5vw
+  }
 }
 
-.text1{
-  color:black;
+.text1 {
+  color: black;
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
-  position:absolute;
+  position: absolute;
   top: 45%;
-  width:100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  text-align:center;
+  text-align: center;
   font-size: 1.8rem;
 }
 
-@media (max-width: 900px){
-  .text1{
+@media (max-width: 900px) {
+  .text1 {
     font-size: 3.3vw;
   }
 }
+
 .button1 {
   display: block;
   color: black;
   font-size: 1.25rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color:white;
+  background-color: white;
   outline: black;
   outline: .5em;
   margin: auto;
@@ -150,18 +155,18 @@ nav div#title {
 
 .faqs {
   font-size: 2.5rem;
-  font-family: "Times","Times New Roman",serif;
-  font-weight:bold;
+  font-family: "Times", "Times New Roman", serif;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.faqs-container{
+.faqs-container {
   display: flex;
   flex-flow: wrap;
 }
 
-.faqs-container > .qa {
+.faqs-container>.qa {
   flex: 1 0 47vw;
   margin: 10px;
 }
@@ -169,7 +174,7 @@ nav div#title {
 .faqsq1 {
   font-size: 2rem;
   line-height: 1.2em;
-  font-family: "Times","Times New Roman",serif;
+  font-family: "Times", "Times New Roman", serif;
   font-weight: bold;
   text-align: center;
   margin-left: 1cm;
@@ -179,7 +184,7 @@ nav div#title {
 
 .faqsa1 {
   font-size: 1.5rem;
-  font-family: "Times","Times New Roman",serif;
+  font-family: "Times", "Times New Roman", serif;
   line-height: 1.3em;
   text-align: center;
   margin-left: 1cm;
@@ -188,17 +193,16 @@ nav div#title {
 
 .contacth {
   font-size: 2rem;
-  font-family: "Times","Times New Roman",serif;
+  font-family: "Times", "Times New Roman", serif;
   font-weight: bold;
   text-align: center;
   margin-left: 1cm;
   margin-right: 1cm;
 }
 
-
 .contacta1 {
   font-size: 2rem;
-  font-family: "Times","Times New Roman",serif;
+  font-family: "Times", "Times New Roman", serif;
   font-weight: bold;
   text-align: center;
   margin-left: 1cm;
@@ -207,16 +211,14 @@ nav div#title {
 
 .contacta2 {
   font-size: 2rem;
-  font-family: "Times","Times New Roman",serif;
+  font-family: "Times", "Times New Roman", serif;
   font-weight: bold;
   text-align: center;
   margin-left: 1cm;
   margin-right: 1cm;
 }
 
-
 hr {
-  color:black;
+  color: black;
   height: 2px;
-
 }
