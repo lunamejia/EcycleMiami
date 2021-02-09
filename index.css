@@ -72,8 +72,9 @@ nav div#title {
     display: block;
     position: absolute;
     height: 50%;
-    top: 2.4em;
-    right: 10px;
+    top: 1.6em;
+    padding: 1em;
+    right: 0;
   }
 
   nav.responsive a.non-home {
