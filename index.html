@@ -22,10 +22,19 @@
 </head>
 
 <body>
-  <div class="title">
-    <h1>ECYCLE MIAMI</h1>
-    <h3><i>SOLUTION TO ELECTRONIC WASTE</i></h3>
-  </div>
+  <nav class="topnav">
+    <a href="index.html" id="home">
+          <h1>ECYCLE MIAMI</h1>
+          <h3><i>SOLUTION TO ELECTRONIC WASTE</i></h3>
+    </a>
+    <div class="container">
+      <a href="info.html" class="non-home">Info</a>
+      <a href="#contact" class="non-home">Contact</a>
+    </div>
+    <a class="btn icon non-home" onclick="switchNav()">
+      <img src="imgs/list.png" alt="Menu" width="20px">
+    </a>
+  </nav>
 
   <div class="banner">
     <img src="https://surplusservice.com/wp-content/uploads/2017/08/Fotolia_87190680_Subscription_Monthly_M.jpg" alt="Electronic Waste">
@@ -66,12 +75,12 @@
   </div>
   <br>
   <br>
-<h1 class="contacth"> Contact Us</h1>
-<br>
-<br>
-<hr> </hr>
-<p class="contacta1"> Email: Isalulum@Gmail.com</p>
-<p class="contacta2"> Phone: 3059518584</p>
+  <section id="contact">
+    <h1 class="contacth"> Contact Us</h1>
+    <br>
+    <p class="contacta1"> Email: Isalulum@Gmail.com</p>
+    <p class="contacta2"> Phone: 3059518584</p>
+  </section>
 <br>
 <br>
 
@@ -80,6 +89,17 @@
 
     for(var i=0; i < faqs.length; i++){
       faqs[i].style.order = faqs[i].id.substring(4);
+    }
+
+
+    function switchNav() {
+      var x = document.getElementsByClassName("topnav")[0];
+      console.log("switching menu")
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
   </script>
 
