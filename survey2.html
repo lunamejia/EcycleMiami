@@ -1,0 +1,118 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/Users/lunamejia/Projects/project1/EcycleMiami/survey2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Montserrat+Subrayada:wght@700&family=Taviraj&family=Trirong&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">  
+    <form id="contact" action=""method="post">
+      <h3>ECYCLE MIAMI SURVEY</h3>
+      <h4>Please fill out the form below:</h4>
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Year device was purchased" type="text" tabindex="4" required>
+      </fieldset>
+      
+        <input placeholder="Does the device contain any mechanical issues or damage" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+        What Electronics would you like to donate:
+        <br>
+        <input placeholder="" type ="checkbox" tabindex="1.5" > Mobile Device
+    </fieldset>
+    <fieldset>
+        <input placeholder="" type ="checkbox" tabindex="1.5" > PC/MAC
+    </fieldset>
+    <fieldset>
+        <input placeholder="" type ="checkbox" tabindex="1.5" > Television
+    </fieldset>
+    <fieldset>
+        <input placeholder="" type ="checkbox" tabindex="1.5" > Printer
+    </fieldset>
+    <fieldset>
+        <input placeholder="" type ="checkbox" tabindex="1.5" > Other Device
+    </fieldset>
+
+ 
+        <textarea placeholder="Type an additional message here ..." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        Where are you located? 
+        <br>
+        If current position is clicked, a map will appear below:
+        <br>
+        <br>
+      <!--Lines 58-106 are modified from a reference -->
+        <input type="checkbox" onclick="getlocation();">
+            Current Position</button> 
+            <br>
+        <div id="demo2" style="width: 350px; height: 350px;"> 
+              
+        </div> 
+        <script src="https://maps.google.com/maps/api/js?sensor=false"> 
+              
+        </script> 
+        <script type="text/javascript"> 
+        function getlocation(){ 
+            if(navigator.geolocation){ 
+                navigator.geolocation.getCurrentPosition(showLoc, errHand); 
+            } 
+        } 
+        function showLoc(pos){ 
+            latt = pos.coords.latitude; 
+            long = pos.coords.longitude; 
+            var lattlong = new google.maps.LatLng(latt, long); 
+            var OPTions = { 
+                center: lattlong, 
+                zoom: 10, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions); 
+            var markerg =  
+               new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"}); 
+        } 
+          
+        function errHand(err) { 
+            switch(err.code) { 
+                case err.PERMISSION_DENIED: 
+                    result.innerHTML = "The application doesn't have the permission"  +  
+                               "to make use of location services" 
+                    break; 
+                case err.POSITION_UNAVAILABLE: 
+                    result.innerHTML = "The location of the device is uncertain" 
+                    break; 
+                case err.TIMEOUT: 
+                    result.innerHTML = "The request to get user location timed out" 
+                    break; 
+                case err.UNKNOWN_ERROR: 
+                    result.innerHTML = "Time to fetch location information exceeded"+ 
+                      "the maximum timeout interval" 
+                    break; 
+            } 
+        } 
+        </script> 
+        <br>
+        <fieldset>
+            <input placeholder="Other Zipcode" type="tel" tabindex="3" required>
+          </fieldset>
+        <button name="submit" type="submit" id="contact-submit" onclick='window.open("ty.html","_self")'data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+   
+</body>
+  </div>
+
+  </html>
